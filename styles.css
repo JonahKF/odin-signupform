@@ -121,5 +121,11 @@ a {
     padding: 50px;
     margin: 0 0 40px 0;
     display: flex;
+    flex-direction: column;
     filter: drop-shadow(3px 5px 5px rgb(202, 202, 202));
+}
+
+.inner-form-flexbox {
+    display: flex;
+    flex-direction: row;
 }
