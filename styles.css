@@ -65,7 +65,9 @@ a {
     background-size: cover;
     background-position: right 0px top;
     height: 100vh;
-    width: 440px;
+    width: 390px;
+    min-width: 390px;
+    flex-shrink: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -95,4 +97,29 @@ a {
     background-color: rgb(226, 226, 226);
     height: 100vh;
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.CTA {
+    width: 80%;
+    margin-top: 120px;
+    font-weight: 800;
+    padding-left: 50px;
+}
+
+.CTA > :nth-child(even) {
+    margin-top: 15px;
+}
+
+.form-body {
+    background-color: #F6F7F8;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    width: 100%;
+    padding: 50px;
+    margin: 0 0 40px 0;
+    display: flex;
+    filter: drop-shadow(3px 5px 5px rgb(202, 202, 202));
 }
