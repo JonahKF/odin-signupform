@@ -51,6 +51,15 @@ h6 {
 
 /* End of Reset */
 
+@font-face {
+    font-family: "norse-bold";
+    src:
+      url("fonts/norse-bold-webfont.woff2") format("woff2"),
+      url("fonts/norse-bold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
 body {
     display: flex;
     flex-direction: row;
@@ -81,6 +90,7 @@ a {
 }
 
 .logo-bar > p {
+    font-family: "norse-bold";
     color: white;
     text-align: center;
     position: relative;
