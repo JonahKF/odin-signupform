@@ -54,11 +54,11 @@ h6 {
 @font-face {
     font-family: "norse-bold";
     src:
-      url("fonts/norse-bold-webfont.woff2") format("woff2"),
-      url("fonts/norse-bold-webfont.woff") format("woff");
+        url("fonts/norse-bold-webfont.woff2") format("woff2"),
+        url("fonts/norse-bold-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
-  }
+}
 
 body {
     display: flex;
@@ -82,14 +82,14 @@ a {
     align-items: center;
 }
 
-.left-image-container > .logo-bar {
+.left-image-container>.logo-bar {
     margin-top: 190px;
     width: 100%;
     height: 130px;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.logo-bar > p {
+.logo-bar>p {
     font-family: "norse-bold";
     color: white;
     text-align: center;
@@ -97,7 +97,7 @@ a {
     top: 40px;
 }
 
-.left-image-container > footer {
+.left-image-container>footer {
     margin-top: auto;
     margin-bottom: 10px;
     color: white;
@@ -119,7 +119,11 @@ a {
     padding-left: 50px;
 }
 
-.CTA > :nth-child(even) {
+.CTA>p {
+    width: 75ch;
+}
+
+.CTA> :nth-child(even) {
     margin-top: 15px;
 }
 
@@ -128,14 +132,46 @@ a {
     border: 1px solid #D6D9DC;
     border-radius: 3px;
     width: 100%;
-    padding: 50px;
+    padding: 10px;
+    padding-left: 50px;
     margin: 0 0 40px 0;
     display: flex;
     flex-direction: column;
     filter: drop-shadow(3px 5px 5px rgb(202, 202, 202));
 }
 
+.form-body legend {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 1.5em;
+}
+
 .inner-form-flexbox {
     display: flex;
     flex-direction: row;
+    width: 80%;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.container {
+    width: 300px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.container input {
+    background-color: #FFFFFF;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.container label {
+    margin-bottom: 5px;
 }
