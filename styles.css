@@ -89,14 +89,19 @@ a {
     width: 100%;
     height: 180px;
     background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-bar img {
+    height: 80%;
 }
 
 .logo-bar>p {
+    font-size: 6rem;
     font-family: "norse-bold";
     color: white;
-    text-align: center;
-    position: relative;
-    top: 40px;
 }
 
 .left-image-container>footer {
@@ -125,7 +130,7 @@ a {
 .CTA>p {
     padding: 0;
     width: 59ch;
-    font-size: 1.3em;
+    font-size: 1.1rem;
 }
 
 .CTA> :nth-child(even) {
